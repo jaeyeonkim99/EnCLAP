@@ -1,0 +1,14 @@
+torchaudio
+aac-metrics==0.4.2
+accelerate==0.20.3
+datasets==2.13.1
+encodec==0.1.1
+gradio==3.41.0
+laion-clap==1.1.4
+librosa==0.10.1
+markupsafe==2.0.1
+omegaconf==2.3.0
+soundfile==0.12.1
+tensorboard==2.13.0
+tokenizers==0.13.3
+transformers==4.29.0
