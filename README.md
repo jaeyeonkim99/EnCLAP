@@ -78,7 +78,12 @@ python inference.py  --ckpt checkpoint_directory_with_config --clap_ckpt clap_ck
 python gradio_app.py --ckpt checkpoint_directory_with_config --clap_ckpt clap_ckpt_path --device cuda
 ```
 # Pretrained Checkpoints
-Pretrained checkpoints will be available soon. 
+Pretrained checkpoints are available [here](https://drive.google.com/drive/folders/1JOcKyNOlKud0PY93ETGDlUJnWhmSC35m?usp=sharing).
+- Each folder contains both the configuration file (`config.json`) and the weight file (`pytorch_model.bin`) required for inference.
+- The folders `audiocaps`, `clotho`, `clotho_finetune`, and `both` denote the datasets on which each checkpoint is trained:
+  - `clotho_finetune` contains checkpoints pretrained on AudioCaps and finetuned on Clotho.
+  - `both` contains checkpoints trained on both Clotho and AudioCaps, used for the official gradio demo.
+- The labels `base` and `large` indicate the checkpoints for EnClap-base and EnClap-large, respectively.
 
 # Citation
 ```
@@ -88,4 +93,16 @@ Pretrained checkpoints will be available soon.
   journal={arXiv preprint arXiv:2401.17690},
   year={2024}
 }
+```
+```
+@INPROCEEDINGS{10446672,
+  author={Kim, Jaeyeon and Jung, Jaeyoon and Lee, Jinjoo and Woo, Sang Hoon},
+  booktitle={ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={EnCLAP: Combining Neural Audio Codec and Audio-Text Joint Embedding for Automated Audio Captioning}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={6735-6739},
+  keywords={Training;Codecs;Speech coding;Source coding;Signal processing;Acoustics;Task analysis;automated audio captioning;neural audio codec;audio-text joint embedding},
+  doi={10.1109/ICASSP48485.2024.10446672}}
 ```
